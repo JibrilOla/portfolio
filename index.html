@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <script src="theme.js" defer></script>
+  </head>
+
+  <style>
+    body,
+    html {
+      /* height: 140%; */
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+
+    .content {
+      /* height: 100%; */
+      /* align-items: center; */
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      background: url("https://images.pexels.com/photos/6804080/pexels-photo-6804080.jpeg")
+        no-repeat center center/cover;
+      opacity: 80%;
+      width: 100%;
+      height: 600px;
+      color: rgb(105, 12, 115);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    #intro {
+      display: flex;
+      height: 60%;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 75px;
+      font-family: "Pacifico", cursive;
+      z-index: 1;
+    }
+    #txtone {
+      font-size: 70px;
+      color: rgb(254, 254, 254);
+      font-weight: 600;
+      font-family: "Great Vibes", cursive;
+      z-index: 1;
+      margin-top: 20%;
+    }
+
+    #contact {
+      border-radius: 40px;
+      border: 0px;
+      width: 25%;
+      z-index: 1;
+      height: 40%;
+      font-size: 25px;
+      color: rgb(147, 45, 22);
+      text-shadow: 2px 1px 2px;
+      font-weight: 600;
+      box-shadow: 0px 3px 0px rgb(209, 239, 17);
+      text-decoration: none;
+    }
+    #arrow {
+      height: 30px;
+      width: 70px;
+      position: relative;
+      bottom: 10px;
+    }
+    .about {
+      color: rgb(105, 12, 115);
+      font-size: 35px;
+      text-shadow: 0px 0px 5px rgb(255, 255, 255);
+      font-family: Georgia, Times, "Times New Roman", serif;
+    }
+    #about-txt {
+      text-align: center;
+      font-size: 20px;
+      width: 70%;
+    }
+    p {
+      font-family: sans-serif;
+      font-weight: 600;
+    }
+    .skills {
+      height: 100px;
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+    }
+    #html,
+    #css,
+    #js,
+    #git {
+      height: 100%;
+      background: rgb(2, 0, 36);
+      color: white;
+      background: linear-gradient(
+        90deg,
+        rgb(192, 77, 106) 0%,
+        rgb(222, 6, 6) 35%,
+        rgb(252, 197, 0) 100%
+      );
+      width: 20%;
+      border-radius: 50%;
+      font-size: 30px;
+      /* text-align: center; */
+      /* align-items: center; */
+      /* justify-content: center; */
+    }
+    .content-two {
+      height: 1500px;
+      width: 90%;
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      margin-top: 5%;
+    }
+    #project-row-one {
+      height: 30%;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+    }
+    #clipboard,
+    #order-summary,
+    #nft {
+      height: 80%;
+      background: url("images/desktop-preview-clipboard.jpg") no-repeat center
+        center/cover;
+      width: 30%;
+      border-radius: 10px;
+      box-shadow: 0px 10px 50px rgb(103, 36, 247);
+    }
+    #order-summary,
+    #qrcode {
+      background: url("images/desktop-preview-ordersummary.jpg") no-repeat
+        center center/cover;
+      box-shadow: 0px 10px 30px rgb(247, 36, 36);
+    }
+    #nft,
+    #stats {
+      background: url("images/desktop-preview-nft.jpg") no-repeat center
+        center/cover;
+      position: relative;
+      top: 70%;
+      box-shadow: 0px 10px 50px rgb(130, 247, 36);
+    }
+    #project-row-two,
+    #project-row-three {
+      height: 30%;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+    }
+    #preview-product,
+    #stats,
+    #qrcode,
+    #previewresults,
+    #sunny {
+      height: 80%;
+      background: url("images/desktop-preview-product.jpg") no-repeat center
+        center/cover;
+      width: 30%;
+      border-radius: 10px;
+      box-shadow: 0px 10px 50px rgb(95, 6, 1);
+    }
+    #stats {
+      background: url("images/desktop-preview-stats.jpg") no-repeat center
+        center/cover;
+      box-shadow: 0px 10px 50px rgb(103, 36, 247);
+    }
+    #qrcode {
+      background: url("images/desktop-previewqrcode.jpg") no-repeat center
+        center/cover;
+      box-shadow: 0px 10px 50px rgb(227, 16, 220);
+    }
+    #previewresults {
+      background: url("images/desktop-previewresults.jpg") no-repeat center
+        center/cover;
+      box-shadow: 0px 10px 50px rgb(137, 155, 6);
+    }
+    #sunny {
+      background: url("images/desktop-previewsunnyside.jpg") no-repeat center
+        center/cover;
+      box-shadow: 0px 10px 50px rgb(36, 219, 247);
+    }
+    .footer {
+      display: flex;
+      width: 100%;
+      height: 200px;
+      background-color: rgb(105, 12, 115);
+      text-align: center;
+      justify-content: center;
+      font-family: sans-serif;
+      text-decoration: none;
+    }
+    #ff {
+      display: flex;
+      width: 70%;
+      color: white;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav {
+      height: 40px;
+      display: flex;
+      position: absolute;
+      font-size: 13px;
+      justify-content: space-between;
+      width: 40%;
+      color: rgb(0, 213, 255);
+      left: 7%;
+      bottom: 93%;
+      z-index: 1;
+    }
+    .theme {
+      height: 30px;
+      display: flex;
+      position: absolute;
+      right: 4%;
+      bottom: 93%;
+      z-index: 1;
+      background-color: rgb(240, 11, 11);
+    }
+    #ld {
+      width: 30px;
+    }
+
+    #none {
+      text-decoration: none;
+      color: rgb(139, 225, 11);
+    }
+    #non{
+      text-decoration: none;
+      color: rgb(105, 12, 115);
+    }
+    @media (max-width: 770px) {
+      .nav {
+        font-size: 12px;
+        width: 45%;
+        color: rgb(105, 12, 115);
+      }
+      .header {
+        height: 400px;
+        display: flex;
+      }
+
+      #intro {
+        font-size: 35px;
+      }
+      #txtone {
+        font-size: 30px;
+      }
+
+      #contact {
+        font-size: 15px;
+      }
+      .about {
+        font-size: 25px;
+      }
+      #about-txt {
+        font-size: 10px;
+        width: 80%;
+      }
+      .skills {
+        height: 70px;
+        width: 70%;
+      }
+      #html,
+      #css,
+      #js,
+      #git {
+        height: 80%;
+        font-size: 18px;
+      }
+      .content-two {
+        height: 800px;
+        width: 100%;
+      }
+      #ff {
+        display: flex;
+        width: 95%;
+      }
+      h2 {
+        font-size: 12px;
+      }
+      #fft {
+        font-size: 12px;
+      }
+    }
+  </style>
+  <body>
+    <div class="content">
+      <div class="nav">
+        <p><a href="#about" id="non">About me</a></p>
+        <p><a href="#myskills" id="non">My skills</a></p>
+        <p><a href="#portfolio" id="non">Portfolio</a></p>
+      </div>
+      <div class="theme">
+        <img
+          src="images/dark-removebg-preview.png"
+          alt=""
+          id="ld"
+          style="background-color: rgb(30, 29, 29); color: white"
+        />
+        <img
+          src="images/light-removebg-preview.png"
+          alt=""
+          id="ld"
+          style="background-color: white; color: black"
+        />
+      </div>
+      <div class="header">
+        <div id="intro">
+          <div id="txtone">Hi there! My name is Olajuwon and</div>
+          <div>I'm a front-end developer</div>
+          <div>
+            <a href="#ff"
+              ><button type="button" id="contact">Contact</button></a
+            >
+          </div>
+        </div>
+        <div id="img"></div>
+      </div>
+      <h1 class="about" id="about">About me</h1>
+      <img src="images/arrow-removebg-preview.png" alt="" id="arrow" />
+      <p id="about-txt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        accusantium labore explicabo dolores, culpa vitae praesentium. Corrupti
+        rerum eos porro error cupiditate dolorum suscipit officia natus quaerat
+        soluta! Eius, sequi!, ipsum dolor sit amet consectetur adipisicing elit.
+        Aut neque optio voluptates nulla aliquid pariatur distinctio dolor vitae
+        quidem culpa delectus commodi ab, veniam quis.
+      </p>
+      <br /><br />
+      <h1 class="about" id="myskills">My Skills</h1>
+      <img src="images/arrow-removebg-preview.png" alt="" id="arrow" />
+      <br />
+      <div class="skills">
+        <div id="html"><p>HTML</p></div>
+        <div id="css"><p>CSS</p></div>
+        <div id="js"><p>JS</p></div>
+        <div id="git"><p>GIT</p></div>
+      </div>
+      <br /><br />
+      <h1 class="about" id="portfolio">Portfolio</h1>
+      <img src="images/arrow-removebg-preview.png" alt="" id="arrow" />
+      <div class="content-two">
+        <div id="project-row-one">
+          <a href="https://jibrilola.github.io/clipboard/" id="clipboard"> </a>
+          <a href="https://jibrilola.github.io/nft/" id="nft"></a>
+          <a href="https://jibrilola.github.io/summary/" id="order-summary"></a>
+        </div>
+        <div id="project-row-two">
+          <a
+            href="https://jibrilola.github.io/product-preview/"
+            id="preview-product"
+          ></a>
+          <a href="https://jibrilola.github.io/stats/" id="stats"></a>
+          <a href="https://jibrilola.github.io/qrcode/" id="qrcode"></a>
+        </div>
+        <div id="project-row-three">
+          <a
+            href="https://jibrilola.github.io/preview-results/"
+            id="previewresults"
+          ></a>
+          <a href="https://jibrilola.github.io/sunny/" id="sunny"></a>
+        </div>
+      </div>
+      <h1 class="about">Contact</h1>
+      <img src="images/arrow-removebg-preview.png" alt="" id="arrow" />
+    </div>
+
+    <footer class="footer">
+      <div id="ff">
+        <div>
+          <h2><img src="images/icon-email.svg" alt="" />Email</h2>
+          <p id="fft">
+            <a href="mailto:iam.olajire@gmail.com" id="none"
+              >iam.olajire@gmail.com</a
+            >
+          </p>
+        </div>
+        <div>
+          <h2><img src="images/icon-phone.svg" alt="" />Telephone/WhatsApp</h2>
+          <p id="fft">
+            <a href="https://wa.me/2349165541713" id="none"
+              >+234 916 554 1713</a
+            >
+          </p>
+        </div>
+        <div>
+          <h2>Social media</h2>
+          <div>
+            <a
+              href="https://twitter.com/iam_olajire?t=uMOBkqFn7MYvhUVNsMmRrw&s=09"
+              ><img src="images/icon-twitter.svg" alt=""
+            /></a>
+            <a href="https://www.facebook.com/profile.php?id=100081225632128"
+              ><img src="images/icon-facebook.svg" alt=""
+            /></a>
+            <a href="https://instagram.com/iam.olajire?igshid=ZDc4ODBmNjlmNQ=="
+              ><img src="images/icon-instagram.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
